@@ -55,5 +55,24 @@ agregarDesdeInicioAFinElemPosicion valor lista x = agregarEnPosicionNValor x lis
 agregarEnPosicionNValor :: Int -> [Int] -> Int -> [Int]
 agregarEnPosicionNValor posicion lista valor = (take posicion lista ++ [valor]) ++ drop posicion lista
 -}
--- permutaciones :: [Int] -> [[Int]]
---permutaciones
+
+
+-- No esta definido  sin recursion los de agregar, pero la idea sería esa
+
+permutaciones :: [Int] -> [[Int]]
+permutaciones lista = foldr (\x acc -> agregarPermutacionesACadaElem x acc) [[]] lista
+
+agregarPermutacionesACadaElem :: Int -> [[Int]] -> [[Int]]
+agregarPermutacionesACadaElem valor [] = [[valor]]
+agregarPermutacionesACadaElem valor [a] = agregarDesdeInicioAFinElem valor a
+agregarPermutacionesACadaElem valor xs = agregarDesdeInicioAFinElem valor (head xs) ++ agregarPermutacionesACadaElem  valor (tail xs) 
+
+agregarDesdeInicioAFinElem :: Int -> [Int] -> [[Int]]
+agregarDesdeInicioAFinElem valor lista = agregarDesdeInicioAFinElemPosicion valor lista (length lista) 
+
+agregarDesdeInicioAFinElemPosicion :: Int -> [Int] -> Int -> [[Int]]
+agregarDesdeInicioAFinElemPosicion valor lista 0 = [agregarEnPosicionNValor 0 lista valor]
+agregarDesdeInicioAFinElemPosicion valor lista x = agregarEnPosicionNValor x lista valor : agregarDesdeInicioAFinElemPosicion valor lista (x - 1)
+
+agregarEnPosicionNValor :: Int -> [Int] -> Int -> [Int]
+agregarEnPosicionNValor posicion lista valor = (take posicion lista ++ [valor]) ++ drop posicion lista
