@@ -34,8 +34,8 @@ def esSimetrica(A):
     """
     if (altoMatriz(A) != anchoMatriz(A)):
         return False
-    for i in range(altoMatriz):
-        for j in range(anchoMatriz):
+    for i in range(altoMatriz(A)):
+        for j in range(anchoMatriz(A)):
             if (A[i][j] != A[j][i]):
                 return False
     return True
@@ -114,9 +114,17 @@ A_ejemplo = np.array([
 ])
 
 def calcula_L(A):
-    # La función recibe la matriz de adyacencia A y calcula la matriz laplaciana
-    # L = K - A 
-    # Siendo K la matriz de grado
+    """
+    Calcula la matriz laplaciona del grafo A
+
+    Parametros
+    ----------
+    A: [[]]
+        Matriz de k^(n x n) simetrica
+
+    Devuelve la matriz que la definimos como L = K - A
+    Siendo K la matriz diagonal de los grados de cada vertice en la diagonal y 0s en todas las otras celdas
+    """
     L = A.copy()
     for i in range(altoMatriz(A)):
         gradoNodoI = calcularGrado(A, i)
@@ -127,8 +135,18 @@ def calcula_L(A):
     return L
 
 def calcula_R(A):
-    # La funcion recibe la matriz de adyacencia A y calcula la matriz de modularidad
-    # R = A - P, siendo Pij = ki * kj / 2E
+    """
+    Calcula la matriz R, definida como R = A - P
+
+    Parametros
+    ----------
+    A: [[]]
+        Matriz de k^(n x n) simetrica
+
+    Devuelve R.
+    Cada celda de R_(ij) = A_(ij) - ((k_i  * k_j) / 2E)
+    Siendo k_i el grado del vertice i
+    """
     R = A.copy()
     grados = []
     E = 0
@@ -138,12 +156,14 @@ def calcula_R(A):
     
     #Tecnicamente E := 2E ya que E se suma de toda las filas y eso es su definicion
     #Ahora falta hacer la resta entre A y P (P esta implicito con lo que ya calculamos hasta ahora)
-
+    print(grados)
+    print(f"E = {E}")
     for i in range(altoMatriz(A)):
         for j in range(altoMatriz(A)):
-            R[i][j] = R[i][j] - ((grados[i] * grados[j]) / E )
+            R[i][j] = R[i][j] - ((grados[i] * grados[j]) / (E / 2))
     return R
 
+print(A_ejemplo)
 print(calcula_R(A_ejemplo))
 
 def calcula_lambda(L,v):
