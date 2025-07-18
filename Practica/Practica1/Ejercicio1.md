@@ -52,17 +52,18 @@ flipRaro = flip flip
 3. Sabemos los tipos de:
 	1. `flip :: (a -> b -> c) -> b -> a -> c`
 	   `(-) :: float -> float -> float` (asumimos float)
-	   En substract, aplicamos al "primer parametro", pues 
+	   En substract, aplicamos al "primer parámetro", pues 
 	   `(a -> b -> c) -> (b -> (a -> c)) = (a -> b -> c) -> b -> a -> c`
 	   
 	   Entonces, al aplicarle el `(-)` queda: `float -> float -> float`
-
-
-subtract = flip (-)
-
-flip: (a -> b -> c) -> b -> a -> c
-				f                 x           y
-
-(-)
-float -> float -> float
-substrace :: float -> float -> float (lo que faltaría por aplicar)
+	   
+	   Ya está currificada la función
+4. La función `subtract :: float -> float -> float`
+   Al hacerle la aplicación, queda: `float -> float`
+   Ya está currificada
+5. Es una lambda, que es del tipo `float -> a`
+   Entonces, la función va a tener el tipo `(float -> a) -> a`
+   Está currificada
+6. Su tipo es: `(float -> float) -> float -> float`
+   Está currificada
+7. 

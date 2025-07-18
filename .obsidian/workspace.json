@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practica/Practica1/Ejercicio1.md",
+                "file": "Practica/Practica1/Ejercicio3.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ejercicio1"
+              "title": "Ejercicio3"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Practica/Practica1/Ejercicio1.md",
+                "file": "Practica/Practica1/Ejercicio3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Ejercicio1"
+              "title": "Backlinks for Ejercicio3"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Practica/Practica1/Ejercicio1.md",
+                "file": "Practica/Practica1/Ejercicio3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Ejercicio1"
+              "title": "Outgoing links from Ejercicio3"
             }
           },
           {
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Practica/Practica1/Ejercicio1.md",
+                "file": "Practica/Practica1/Ejercicio3.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Ejercicio1"
+              "title": "Outline of Ejercicio3"
             }
           },
           {
@@ -194,10 +194,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1397769c5215ddc4",
+  "active": "38b315727dc582e0",
   "lastOpenFiles": [
-    "PLP/Programación funcional.md",
+    "Practica/Practica1/Ejercicio2.md",
+    "Practica/Practica1/Ejercicio3.md",
+    "Practica/Practica1/Untitled.canvas",
     "Practica/Practica1/Ejercicio1.md",
+    "PLP/Programación funcional.md",
     "PLP/Calculo lambda.md",
     "Practica/Practica0",
     "Practica/Practica8",
@@ -239,8 +242,6 @@
     "SLD.md",
     "Resolución lógica.md",
     "Relación SLD con Prolog.md",
-    "Razonamiento ecuacional.md",
-    "Prolog's cut.md",
-    "Programación orientada a objetos.md"
+    "Razonamiento ecuacional.md"
   ]
 }

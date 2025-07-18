@@ -1,0 +1,2 @@
+1. Redefinir usando `foldr` las funciones `sum`, `elem`, `(++)`, `filter` y `map`
+2. Denir la función mejorSegún :: (a -> a -> Bool) -> [a] -> a, que devuelve el máximo elemento de la lista según una función de comparación, utilizando foldr1. Por ejemplo, maximum = mejorSegún (>)
