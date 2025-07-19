@@ -27,4 +27,4 @@ Teorema: flip . flip = id
 {f}   ∀ f :: a -> b -> c, ∀ x :: a, ∀ y :: b . f x y = (id f) x y
 {i}    ∀ f :: a -> b -> c, ∀ x :: a, ∀ y :: b . f x y = f x y
 ```
-1. a
+1. 

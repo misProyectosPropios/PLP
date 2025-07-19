@@ -120,3 +120,16 @@ Son equivalentes:
 2. $\Gamma \vDash \tau$ 
 
 La demostración está [[Demostración NK sii valuación]]
+
+## Por qué nos interesa la lógica intuicionista?
+
+Pensemos el caso de que tengamos la regla de la lógica clásica **LEM**. 
+### Que ocurriría?
+
+Sería verdadero las fórmulas del tipo
+$$\text{Hay vida en marte } \lor \neg \text{ Hay vida en marte}$$
+
+Esta fórmula sería verdadera, pero genera algún tipo de conocimiento? No podemos saber si hay o no, nosotros quisiéramos llegar a una solución que nos diga paso a paso como reconstruir la información.
+
+Esto será particularmente útil en el [[Calculo lambda]] a través de la [[Correspondencia de Curry-Howard]], así como la inferencia de tipos
+

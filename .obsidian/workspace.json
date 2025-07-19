@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practica/Practica2/Ejercicio2.md",
+                "file": "PLP/Para que sirve paradigmas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ejercicio2"
+              "title": "Para que sirve paradigmas"
             }
           },
           {
@@ -27,7 +27,21 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practica/Practica2/Ejercicio1.md",
+                "file": "Practica/Practica4/Notación.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Notación"
+            }
+          },
+          {
+            "id": "53c18e59e00efb21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practica/Practica4/Ejercicio1.md",
                 "mode": "source",
                 "source": false
               },
@@ -49,7 +63,8 @@
               "title": "Razonamiento ecuacional"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c86e16a559eb087d",
@@ -208,15 +222,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b2a447ccb5d0c00e",
+  "active": "53c18e59e00efb21",
   "lastOpenFiles": [
+    "Practica/Practica4/Ejercicio5.md",
+    "Practica/Practica4/Ejercicio1.md",
+    "Practica/Practica4/Notación.md",
+    "PLP/Para que sirve paradigmas.md",
     "Practica/Practica2/Ejercicio1.md",
-    "Practica/Practica2/Ejercicio2.md",
     "PLP/Razonamiento ecuacional.md",
-    "Practica/Practica1/Ejercicio7.md",
-    "PLP/Inducción estructural.md",
+    "PLP/Lógica de 1er orden.md",
     "PLP/Esquemas de recursión.md",
     "PLP/Deducción natural en lógica proposicional.md",
+    "Practica/Practica3/Ejercicio5.md",
+    "Practica/Practica2/Ejercicio2.md",
+    "Practica/Practica1/Ejercicio7.md",
+    "PLP/Inducción estructural.md",
     "PLP/Creación de fold y rec.md",
     "PLP/Calculo lambda.md",
     "Practica/Practica1/Ejercicio6.md",
@@ -250,12 +270,6 @@
     "PLP/Demostración NK sii valuación.md",
     "PLP/SLD.md",
     "PLP/Resolución lógica.md",
-    "PLP/Relación SLD con Prolog.md",
-    "PLP/Prolog's cut.md",
-    "PLP/Programación orientada a objetos.md",
-    "PLP/Programación lógica.md",
-    "PLP/Para que sirve paradigmas.md",
-    "PLP/Lógica de 1er orden.md",
-    "PLP/Interpretes.md"
+    "PLP/Relación SLD con Prolog.md"
   ]
 }

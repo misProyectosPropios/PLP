@@ -5,6 +5,7 @@ Los lenguajes de programación tienen 3 aspectos:
 + Implementación.
 Cada uno relacionado entre sí.
 
+## Utilidades
 ### Programación
 + Etiquetado dinámico vs. tipado estático.
 +  Administración manual vs. automática de memoria.
@@ -17,10 +18,10 @@ Cada uno relacionado entre sí.
 +  Pasaje de parámetros por copia o por referencia.
 +  Evaluación estricta (por valor) o diferida (por necesidad).
 +  Tipos de datos inductivos, co-inductivos, GADTs, familias dependientes.
-+  Pattern matching, unificaci´on. Polimorfismo paramétrico.
++  Pattern matching, unificación. Polimorfismo paramétrico.
+
 >Distintas características permiten abordar un mismo problema de
 >distintas maneras
-
 ### Semántica
 
 Dependemos del software en aplicaciones criticas.
