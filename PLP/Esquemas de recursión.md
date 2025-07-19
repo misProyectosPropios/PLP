@@ -148,3 +148,6 @@ foldAB cNil cBin Nil = cNil
 foldAB cNil cBin (Bin i r d) =
 		cBin (foldAB cNil cBin i) r (foldAB cNil cBin d)
 ```
+
+[[Creación de fold y rec]]: es una muestra más compleja de una creación de fold y rec.
+

@@ -96,7 +96,7 @@ Distintas maneras de dar semántica formal
    Semántica big-step: Evaluación directa al resultado
 2. **Semántica denotacional**
    Interpreta los programas como objetos matemáticos.
-3. Semántica axiomática.
+3. **Semántica** axiomática.
    Establece relaciones lógicas entre el estado del programa antes y después de la ejecución.
 4. etc.
 
@@ -174,3 +174,7 @@ V ::= . . . | zero | succ(V)
 
 #### Forma normal (“f.n.”)
 Un programa M es una f.n. si no existe M′ tal que M → M′.
+
+Las f.n.’s que no son valores se llaman términos de error.
+Ejemplo: `pred(zero)`
+

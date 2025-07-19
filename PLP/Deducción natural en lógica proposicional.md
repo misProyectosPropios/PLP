@@ -2,10 +2,10 @@ Queremos poder hacer afirmaciones matemáticamente precisas sobre programas en d
 
 ##### Ejemplos de afirmaciones que querríamos hacer
 + El tipo (Bool -> Int) está sintácticamente bien formado.
-+ La expresión map tiene tipo ((a -> b) -> [a] -> [b]).
-+ La expresión map tiene tipo ((a -> a) -> [a] -> [a]).
-+ La expresión map tiene tipo Bool.
-+ El programa while (true) {} no termina.
++ La expresión map tiene tipo `((a -> b) -> [a] -> [b])`.
++ La expresión map tiene tipo `((a -> a) -> [a] -> [a])`.
++ La expresión map tiene tipo `Bool`.
++ El programa `while (true) {}` no termina.
 + El resultado de evaluar (factorial 7) es 5040.
 > En este contexto, las afirmaciones se llaman juicios.
 
