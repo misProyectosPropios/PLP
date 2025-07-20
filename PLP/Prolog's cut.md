@@ -15,6 +15,7 @@ Al momento de hacer backtracking:
 + Se continúa buscando hacia atrás.
 ## Negación por falla:
 
+> La `negación por falla` no coincide con la `negación lógica`.
 ### not:
 Si fail es un predicado que falla siempre, se puede definir la
 negación en Prolog asi:

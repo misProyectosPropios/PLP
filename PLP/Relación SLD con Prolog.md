@@ -31,7 +31,3 @@ esElSucesor(X, suc(X)).
 ?- esElSucesor(Y, Y).
 ✓ ...........................{Y := X, X := suc(X)}
 ```
-
-
-Mencionar que no es completo
-Mencionar que es falso también
