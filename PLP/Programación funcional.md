@@ -22,9 +22,10 @@ $$e_1 = e_2$$
 si:
 + **Vista denotacional.**
 	+ Declara que e1 y e2 tienen el mismo significado
+	+ Es decir, generan el mismo resultado
 + **Punto de vista operacional**
 	+ Computar el valor de e1 se reduce a computar el valor de e2.
-Es decir, puede ser si literalmente son lo mismo o si generan los mismos resultados.
+	+ Que hacen las mismas operaciones (dejando que son equivalentes una con otra)
 ## Características de programa funcional:
 
 Está formado por un conjunto de ecuaciones

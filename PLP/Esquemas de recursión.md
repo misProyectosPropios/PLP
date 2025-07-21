@@ -110,8 +110,10 @@ foldl (*) z [a, b, c] = ((z * a) * b) * c
 
 > Si `*` es un operador asociativo y conmutativo, generan lo mismo
 
+## Recursión global
 
-### Datos algebraicos y recursión
+Aparte de permitir el acceso a los argumentos no recursivos y a las subestructuras, permite el acceso a los resultados de las recursiones anteriores
+## Datos algebraicos y recursión
 
 Una vez definimos los [[Tipos de datos algebraicos]], podemos generar un tipo de **recursión estructural general**, tal que no sea únicamente para las listas, sino para cualquier  [[Tipos de datos algebraicos]].
 

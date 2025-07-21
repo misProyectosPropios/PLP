@@ -70,11 +70,15 @@ $$\{x_1:\tau_1, \dots, x_n:\tau_n\}$$
 
 sin variables repetidas $(i \neq j \Rightarrow x_i \neq x_j )$. 
 
+**O lo mismo:** son conjuntos finitos de asociaciones entre tipos y variables
+
 A veces notamos $dom(\Gamma) = \{x_1, \dots , x_n\}$.
 
 El sistema de tipos predica sobre juicios de tipado, de la forma
 $$ \Gamma \vdash M : \tau$$
 ### Reglas de tipado
+
+En estas reglas, solamente podemos ir aplicando **una** sola regla (o ninguna, en caso de que no sea  tipable). Esto genera que sea **deterministico** el proceso
 
 ![[Pasted image 20250715193228.png]]
 # TODO pasarlo a latex
@@ -134,10 +138,21 @@ denota el término que resulta de reemplazar todas las ocurrencias libres de x e
 ![[Pasted image 20250715195214.png]]
 
 
+## Propiedades de evaluación:
 
+### Teorema
+#### Determinismo
+
+#### Preservación de tipos
+
+#### Progreso
+
+#### Terminación
 
 ![[Pasted image 20250715195243.png]]
 
+### Corolario
+#### Canocidad
 
 ![[Pasted image 20250715195252.png]]
 
@@ -175,6 +190,7 @@ V ::= . . . | zero | succ(V)
 #### Forma normal (“f.n.”)
 Un programa M es una f.n. si no existe M′ tal que M → M′.
 
-Las f.n.’s que no son valores se llaman términos de error.
-Ejemplo: `pred(zero)`
-
+Las f.n.'s son:
++ O valores 
++ Términos de error
+	+ Ejemplo: `pred(zero)
