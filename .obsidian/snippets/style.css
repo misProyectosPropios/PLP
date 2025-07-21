@@ -1,0 +1,4 @@
+.theme-dark .HyperMD-codeblock, .theme-dark pre {
+    white-space: pre;
+    overflow-x:auto;
+}

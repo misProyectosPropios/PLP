@@ -136,3 +136,16 @@ Basta con encontrar una observación `obs :: A -> Bool` que las distinga
 ### Necesidad de lemas auxiliares
 
 Hay algunas propiedades que para demostrarlas es necesario conocer algún lema auxiliar que logra *destrabar* algún paso
+
+## Pasos a seguir para razonamiento ecuacional
+
+1. Leer la propiedad, entenderla y convencerse de que es verdadera.
+2. Plantear la propiedad como predicado unario.
+3. Plantear el esquema de inducción.
+4. Plantear y resolver el o los caso(s) base.
+5. Plantear y resolver el o los caso(s) inductivo(s)
+
+#### Sobre el predicado unario
+
+El predicado unario nos sirve para formalizar lo que queremos demostrar y con cual variable vamos a hacer la inducción
+
