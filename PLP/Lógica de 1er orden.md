@@ -86,6 +86,14 @@ Se agregan reglas de introducción y eliminación para ∀ y ∃.
 `Cuantificación existencial           ∃i ∃e     `
 ### Justificación de las restricciones al agregar las nuevas reglas
 
+#### Introducción del para todo
+
+Imaginemos que pasaría si no estuviera la restricción
+
+Tendriamos como verdadero a  `p(X) |- ∀x P(x)`, pero esto no tiene porque ser válido. Puedo encontrar una interpretación donde no lo sea
+
+#### 
+
 ## Semántica de la lógica de primer orden
 
 ### Estructuras de primer orden

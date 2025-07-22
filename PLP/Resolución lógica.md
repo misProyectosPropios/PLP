@@ -35,7 +35,15 @@ Si no se encuentra una refutación de $\mathcal{C}$:
 
 #### Skoleminización
 
+La skolemnización preserva la satisfactibilidad, pero no la validez. 
+>Para la resolución no nos importa eso, pues queremos ver que es insatisfactible su negación, no nos fijamos directamente si es válida o no
+
 ##### Ejemplo que no cumple la validez
+
+|        Valida         | Inválida        |
+| :-------------------: | :-------------- |
+| $$∃X. (P(0) ⇒ P(X))$$ | $$P(0) ⇒ P(c)$$ |
+
 
 ### Refutación
 
