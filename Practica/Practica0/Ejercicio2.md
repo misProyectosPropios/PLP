@@ -8,23 +8,24 @@ Definir las siguientes funciones:
 ## Respuestas
 1. 
 ```haskell
-valorAbsoluto :: Float → Float
+valorAbsoluto :: Float -> Float
 valorAbsoluto x | x < 0 = (-1) * x
 				| otherwise = x	
 ```
 2. 
 ```haskell
-bisiesto :: Int → Bool
+bisiesto :: Int -> Bool
+{-TODO-}
 ```
 3. 
 ```haskell
-factorial :: Int → Int
+factorial :: Int -> Int
 factorial 0 = 1
 factorial x = x * factorial (x - 1) 
 ```
 4. 
 ```haskell
-cantDivisoresPrimos :: Int → Int
+cantDivisoresPrimos :: Int -> Int
 cantDivisoresPrimos x = cantDivPrimosAux x (x - 1)
 
 cantDivPrimosAux :: Int -> Int -> Int
@@ -33,9 +34,10 @@ cantDivPrimosAux x y | x % y == 0 && esPrimo y = 1 + cantDivPrimosAux x (y -1)
 					 | otherwise = cantDivPrimosAux x (y -1)
 
 esPrimo :: Int -> Bool
-
+esPrimo x = esPrimo x (x - 1)
 
 esPrimoAux :: Int -> Int -> Bool
 esPrimoAux _ 1 = True
-esPrimoAux x y = 
+esPrimoAux x y | x % y == 0 = False
+			   | otherwise = True
 ```

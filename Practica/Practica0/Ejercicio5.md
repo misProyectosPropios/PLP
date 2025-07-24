@@ -12,13 +12,19 @@ definir las siguientes funciones:
 ## Respuestas
 1. 
 ```haskell
-
+vacioAB :: AB a -> Bool
+vacioAB Nil = True
+vacioAB _ = False
 ```
 2.  
 ```haskell
-
+negacionAB :: AB Bool -> AB Bool
+negacionAB Nil = Nil
+negacionAB (Bin i v d) = Bin (negacionAB i) (not v) (negacionAB d)
 ```
 3.  
 ```haskell
-
+productoAB :: AB Bool -> Bool
+productoAB Nil = 1
+productoAB (Bin i v d) = v * productoAB i * productoAB d
 ```

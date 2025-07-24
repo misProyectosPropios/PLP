@@ -8,13 +8,39 @@ Definir las siguientes funciones sobre listas:
 ## Respuestas
 1. 
 ```haskell
+limpiar :: String -> String -> String
+limpiar [] lista = lista
+limpiar (x:xs) lista = limpiar xs (sacarElemDeList lista x)
 
+sacarElemDeList :: [a] -> a -> [a] 
+sacarElemDeList [] _ = []
+sacarElemDeList (x:xs]) | x == a = sacarElemDeList xs
+                        | otherwise = x : sacarElemDeList xs
 ```
 2. 
 ```haskell
+difPromedio :: [Float] -> [Float]
+difPromedio lista = sacarACadaElementoN lista (promedio lista)
+
+sacarACadaElementoN :: (Num a) => [a] -> a -> [a]
+sacarACadaElementoN [] _ = []
+sacarACadaElementoN (x:xs) val = (x - val) : sacarACadaElementoN xs val
+
+promedio :: (Num a) => [a] -> Float
+promedio lista = (sumList lista) / (length lista)
+
+sumList :: (Num a) => [a] -> a
+sumList [] = []
+sumList (x:xs) = x + sumList xs
+
 
 ```
 3. 
 ```haskell
-
+todosIguales :: [Int] -> Bool
+todosIguales [] = True
+todosIguales [_] = True
+todosIguales [x] = True
+todosIguales (x1:x2:xs) | x1 == x2 = todosIguales (x2:xs)
+						| otherwisw = False
 ```

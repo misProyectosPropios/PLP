@@ -12,10 +12,14 @@ data Either a b = Left a | Right b
 ## Respuestas
 1. 
 ```haskell
-
+inverso :: Float -> Maybe Float
+inverso 0 = Nothing
+inverso x = Maybe (1 / x)
 ```
 2. 
 ```haskell
-
-   
+aEntero :: Either Int Bool -> Int
+aEntero Left x = x
+aEntero Right True = 1
+aEntero Right False = 1
 ```
