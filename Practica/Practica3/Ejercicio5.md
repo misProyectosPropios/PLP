@@ -1,8 +1,18 @@
 Demostrar en deducción natural que las siguientes fórmulas son teoremas **sin usar principios de razonamiento clásico**s salvo que se indique lo contrario. Recordemos que una fórmula σ es un teorema si y sólo si vale ⊢ σ
 
-1. `(ρ ⇒ σ ⇒ τ ) ⇒ (ρ ⇒ σ) ⇒ ρ ⇒ τ`
-2. `⊢(ρ ⇒ ⊥) ⇒ ¬ρ`
-3. `ρ ⇒ ¬¬ρ`
+1. *Modus ponens* relativizado:`(ρ ⇒ σ ⇒ τ ) ⇒ (ρ ⇒ σ) ⇒ ρ ⇒ τ`
+2. Reducción al absurdo: `⊢(ρ ⇒ ⊥) ⇒ ¬ρ`
+3. Introducción de la doble negación: `ρ ⇒ ¬¬ρ`
+4. Eliminación de la triple negación: `¬¬¬ρ ⇒ ¬ρ`
+5. Contraposición: `(ρ ⇒ σ) ⇒ (¬σ ⇒ ¬ρ)`
+6. Adjunción: `((ρ ∧ σ) ⇒ τ ) ⇔ (ρ ⇒ σ ⇒ τ )`
+7. de Morgan (I): `¬(ρ ∨ σ) ⇔ (¬ρ ∧ ¬σ)`
+8. de Morgan (II): `¬(ρ ∧ σ) ⇔ (¬ρ ∨ ¬σ)`. Para la dirección ⇒ es necesario usar principios de razonamiento clásicos.
+9. Conmutatividad (∧): `(ρ ∧ σ) ⇒ (σ ∧ ρ)`
+10. Asociatividad (∧): `((ρ ∧ σ) ∧ τ ) ⇔ (ρ ∧ (σ ∧ τ ))`
+11. Conmutatividad (∨): `(ρ ∨ σ) ⇒ (σ ∨ ρ)`
+12. Asociatividad (∨): `((ρ ∨ σ) ∨ τ ) ⇔ (ρ ∨ (σ ∨ τ ))`
+¿Encuentra alguna relación entre teoremas de adjunción, asociatividad y conmutatividad con algunas de las propiedades demostradas en la práctica 2?
 
 ---
 ## Respuestas
@@ -102,14 +112,25 @@ x5 --- x7
 ```mermaid
 flowchart BT
 
-x1["⊢((ρ∧σ)⇒τ)⇒(ρ⇒σ⇒τ)"]
+x1["⊢((ρ∧σ)⇒τ) ⇒ (ρ⇒σ⇒τ)"]
+x2["(ρ∧σ)⇒τ ⊢ ρ⇒σ⇒τ"]
+x3["(ρ∧σ)⇒τ, ρ ⊢ σ⇒τ"]
+x4["(ρ∧σ)⇒τ, ρ, σ ⊢ τ"]
+x5["(ρ∧σ)⇒τ, ρ, σ ⊢ (ρ∧σ) ⇒ τ"]
+x6["(ρ∧σ)⇒τ, ρ, σ ⊢ ρ∧σ"]
+x7["(ρ∧σ)⇒τ, ρ, σ ⊢ ρ"]
+x8["(ρ∧σ)⇒τ, ρ, σ ⊢ σ"]
+
+x1 --- x2
+x2 --- x3
+x3 --- x4
+x4 --- x5
+x4 --- x6
+x6 --- x7
+x6 --- x8
 ```
 
-```mermaid
-flowchart BT
 
-x1["⊢(ρ⇒σ⇒τ)⇒((ρ∧σ)⇒τ)"]
-```
 7. de Morgan (I):
 ```mermaid
 flowchart BT
@@ -128,19 +149,91 @@ x1["⊢¬(ρ ∧ σ) ⇔ (¬ρ ∨ ¬σ)."]
 ```mermaid
 flowchart BT
 
-x1["⊢"]
+x1["⊢(ρ ∧ σ) ⇒ (σ ∧ ρ)"]
+x2["ρ ∧ σ ⊢ (σ ∧ ρ)"]
+x3["ρ ∧ σ ⊢ σ"]
+x4["ρ ∧ σ ⊢ ρ"]
+x5["ρ ∧ σ ⊢ ρ ∧ σ"]
+x6["ρ ∧ σ ⊢ ρ ∧ σ"]
+
+x1 --- x2
+x2 --- x3
+x2 --- x4
+x3 --- x5
+x4 --- x6
 ```
+
 10. Asociatividad
 ```mermaid
 flowchart BT
 
-x1["⊢"]
+x1["⊢((ρ∧σ)∧τ)⇒(ρ∧(σ∧τ))"]
+x2["(ρ∧σ)∧τ⊢ρ∧(σ∧τ)"]
+x3["(ρ∧σ)∧τ⊢ρ"]
+x4["(ρ∧σ)∧τ⊢σ∧τ"]
+x5["(ρ∧σ)∧τ⊢σ"]
+x6["(ρ∧σ)∧τ⊢τ"]
+x7["(ρ∧σ)∧τ⊢ρ∧σ"]
+x8["(ρ∧σ)∧τ⊢ρ∧σ"]
+x9["(ρ∧σ)∧τ⊢(ρ∧σ)∧τ"]
+x10["(ρ∧σ)∧τ⊢(ρ∧σ)∧τ"]
+x11["(ρ∧σ)∧τ⊢(ρ∧σ)∧τ"]
+x1 --- x2
+x2 --- x3
+x2 --- x4
+x3 --- x7
+x4 --- x5
+x4 --- x6
+x5 --- x8
+x6 --- x9
+x7 --- x10
+x8 --- x11
+```
+
+
+```mermaid
+flowchart BT
+
+x1["⊢(ρ∧(σ∧τ))⇒((ρ∧σ)∧τ)"]
+x2["ρ∧(σ∧τ)⊢(ρ∧σ)∧τ"]
+x3["ρ∧(σ∧τ)⊢ρ∧σ"]
+x4["ρ∧(σ∧τ)⊢τ"]
+x5["ρ∧(σ∧τ)⊢σ∧τ"]
+x6["ρ∧(σ∧τ)⊢ρ∧(σ∧τ)"]
+x7["ρ∧(σ∧τ)⊢p"]
+x8["ρ∧(σ∧τ)⊢σ"]
+x9["ρ∧(σ∧τ)⊢ρ∧(σ∧τ)"]
+x10["ρ∧(σ∧τ)⊢σ∧τ"]
+x11["ρ∧(σ∧τ)⊢ρ∧(σ∧τ)"]
+x1 --- x2
+x2 --- x3
+x2 --- x4
+x4 --- x5
+x5 --- x6
+x3 --- x7
+x3 --- x8
+x7 --- x9
+x8 --- x10
+x10 --- x11
 ```
 11. Conmutatividad
 ```mermaid
 flowchart BT
 
-x1["⊢"]
+x1["⊢(ρ ∨ σ) ⇒ (σ ∨ ρ)"]
+x2["ρ ∨ σ ⊢σ ∨ ρ"]
+x3["ρ ∨ σ ⊢ ρ ∨ σ"]
+x4["ρ ∨ σ, ρ ⊢ σ ∨ ρ"]
+x5["ρ ∨ σ, σ ⊢ σ ∨ ρ"]
+x6["ρ ∨ σ, ρ ⊢ ρ"]
+x7["ρ ∨ σ, σ ⊢ σ"]
+
+x1 --- x2
+x2 --- x3
+x2 --- x4
+x2 --- x5
+x4 --- x6
+x5 --- x7
 ```
 12. Asociatividad
 ```mermaid

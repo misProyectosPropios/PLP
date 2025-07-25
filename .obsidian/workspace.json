@@ -22,6 +22,62 @@
             }
           },
           {
+            "id": "a5308a2b01de804a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practica/Practica3/Ejercicio2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ejercicio2"
+            }
+          },
+          {
+            "id": "455c2984c1288234",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practica/Practica3/Ejercicio5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ejercicio5"
+            }
+          },
+          {
+            "id": "d51ceeb8ce9d5a8e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practica/Practica3/Ejercicio3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ejercicio3"
+            }
+          },
+          {
+            "id": "d3bd668b9276397c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practica/Practica3/Ejercicio4.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ejercicio4"
+            }
+          },
+          {
             "id": "de790b823b692734",
             "type": "leaf",
             "state": {
@@ -35,7 +91,8 @@
               "title": "Mermaid"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -92,7 +149,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c86e16a559eb087d",
@@ -193,11 +251,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b176dccb84a3fe68",
+  "active": "455c2984c1288234",
   "lastOpenFiles": [
-    "Template/Mermaid.md",
-    "Practica/Practica3/Ejercicio5.md",
+    "Practica/Practica3/Ejercicio2.md",
+    "Practica/Practica3/Ejercicio3.md",
+    "Practica/Practica3/Ejercicio4.md",
     "Practica/Practica3/Ejercicio1.md",
+    "Practica/Practica3/Ejercicio5.md",
+    "Template/Mermaid.md",
     "Template/Ejercicio.md",
     "Practica/Practica5/Ejercicio1.md",
     "Practica/Practica1/Ejercicio2.md",
@@ -212,9 +273,6 @@
     "Practica/Practica3/Ejercicio8.md",
     "Practica/Practica3/Ejercicio7.md",
     "Practica/Practica3/Ejercicio6.md",
-    "Practica/Practica3/Ejercicio4.md",
-    "Practica/Practica3/Ejercicio3.md",
-    "Practica/Practica3/Ejercicio2.md",
     "Practica/Practica1/Ejercicio3.md",
     "Practica/Practica1/Ejercicio1.md",
     "Practica/Practica0/Ejercicio3.md",
