@@ -1,4 +1,4 @@
 ```mermaid
 flowchart BT
-x1["$$⊢$$"]
+x1["⊢"]
 ```

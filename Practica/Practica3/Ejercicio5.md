@@ -6,7 +6,7 @@ Demostrar en deducción natural que las siguientes fórmulas son teoremas **sin 
 
 ---
 ## Respuestas
-1. 
+1. *Modus ponens* relativizado:
 
 ```mermaid
 flowchart TD
@@ -34,21 +34,21 @@ flowchart TD
     n6@{ shape: text}
 ```
 
-2. 
+2. Reducción al absurdo:
 ```mermaid
 flowchart BT
  x5["(ρ ⇒ ⊥), p ⊢  ⇒  ρ"]
  x4["(ρ ⇒ ⊥), p ⊢  ⇒ ¬ρ"]
  x3["(ρ ⇒ ⊥), p ⊢  ⇒ ⊥"]
  x2["(ρ ⇒ ⊥) ⊢  ⇒ ¬ρ"]
- x1["\vdash (ρ ⇒ ⊥) ⇒ ¬ρ"]
+ x1["⊢ (ρ ⇒ ⊥) ⇒ ¬ρ"]
  
  x1 --- x2
  x2 --- x3
  x3 --- x4
  x3 --- x5
 ```
-3. 
+3. Introducción de la doble negación:
 ```mermaid
 flowchart BT
 x1["⊢ρ ⇒ ¬¬ρ"]
@@ -62,7 +62,7 @@ x2 --- x3
 x3 --- x4
 x3 --- x5
 ```
-4. 
+4. Eliminación de la triple negación:
 ```mermaid
 flowchart BT
 x1["⊢ ¬¬¬ρ ⇒ ¬ρ"]
@@ -79,7 +79,7 @@ x3 --- x5
 x4 --- x6
 ```
 
-6. 
+5. Contraposición
 
 ```mermaid
 flowchart BT
@@ -98,4 +98,53 @@ x3 --- x5
 x5 --- x6
 x5 --- x7
 ```
+6. Adjunción
+```mermaid
+flowchart BT
 
+x1["⊢((ρ∧σ)⇒τ)⇒(ρ⇒σ⇒τ)"]
+```
+
+```mermaid
+flowchart BT
+
+x1["⊢(ρ⇒σ⇒τ)⇒((ρ∧σ)⇒τ)"]
+```
+7. de Morgan (I):
+```mermaid
+flowchart BT
+
+x1["⊢¬(ρ ∨ σ) ⇒ (¬ρ ∧ ¬σ)"]
+
+```
+8. de Morgan (II):
+```mermaid
+flowchart BT
+
+x1["⊢¬(ρ ∧ σ) ⇔ (¬ρ ∨ ¬σ)."]
+
+```
+9. Conmutatividad
+```mermaid
+flowchart BT
+
+x1["⊢"]
+```
+10. Asociatividad
+```mermaid
+flowchart BT
+
+x1["⊢"]
+```
+11. Conmutatividad
+```mermaid
+flowchart BT
+
+x1["⊢"]
+```
+12. Asociatividad
+```mermaid
+    flowchart BT
+    
+x1["⊢"]
+```
