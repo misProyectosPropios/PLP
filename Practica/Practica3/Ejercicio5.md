@@ -1,6 +1,8 @@
 Demostrar en deducción natural que las siguientes fórmulas son teoremas **sin usar principios de razonamiento clásico**s salvo que se indique lo contrario. Recordemos que una fórmula σ es un teorema si y sólo si vale ⊢ σ
 
-1. (ρ ⇒ σ ⇒ τ ) ⇒ (ρ ⇒ σ) ⇒ ρ ⇒ τ
+1. `(ρ ⇒ σ ⇒ τ ) ⇒ (ρ ⇒ σ) ⇒ ρ ⇒ τ`
+2. `⊢(ρ ⇒ ⊥) ⇒ ¬ρ`
+3. `ρ ⇒ ¬¬ρ`
 
 ---
 ## Respuestas
@@ -33,7 +35,66 @@ flowchart TD
 ```
 
 2. 
-
+```mermaid
+flowchart BT
+ x5["$$(ρ ⇒ ⊥), p \vdash  ⇒  ρ$$"]
+ x4["$$(ρ ⇒ ⊥), p \vdash  ⇒ ¬ρ$$"]
+ x3["$$(ρ ⇒ ⊥), p \vdash  ⇒ ⊥$$"]
+ x2["$$(ρ ⇒ ⊥) \vdash  ⇒ ¬ρ$$"]
+ x1["$$\vdash (ρ ⇒ ⊥) ⇒ ¬ρ$$"]
+ 
+ x1 --- x2
+ x2 --- x3
+ x3 --- x4
+ x3 --- x5
+```
 3. 
+```mermaid
+flowchart BT
+x1["$$⊢ρ ⇒ ¬¬ρ$$"]
+x2["$$ρ ⊢ ¬¬ρ$$"]
+x3["$$ρ, ¬ρ ⊢ ⊥$$"]
+x4["$$ρ, ¬ρ ⊢ ρ$$"]
+x5["$$ρ, ¬ρ ⊢ ¬ρ$$"]
 
+x1 --- x2
+x2 --- x3
+x3 --- x4
+x3 --- x5
+```
 4. 
+```mermaid
+flowchart BT
+x1["$$⊢ ¬¬¬ρ ⇒ ¬ρ$$"]
+x2["$$¬¬¬ρ ⊢ ¬ρ$$"]
+x3["$$¬¬¬ρ,ρ ⊢ ⊥$$"]
+x4["$$¬¬¬ρ,ρ ⊢ ¬¬ρ$$"]
+x5["$$¬¬¬ρ,ρ ⊢ ¬¬¬ρ$$"]
+x6["$$¬¬¬ρ,ρ ⊢ ρ$$"]
+
+x1 --- x2
+x2 --- x3
+x3 --- x4
+x3 --- x5
+x4 --- x6
+```
+
+6. 
+
+```mermaid
+flowchart BT
+x1["$$ ⊢ (ρ ⇒ σ) ⇒ (¬σ ⇒ ¬ρ)$$"]
+x2["$$ (ρ ⇒ σ), ¬σ ⊢  ¬ρ$$"]
+x3["$$ (ρ ⇒ σ), ¬σ, ρ ⊢ ⊥$$"]
+x4["$$ (ρ ⇒ σ), ¬σ, ρ ⊢ ρ$$"]
+x5["$$ (ρ ⇒ σ), ¬σ, ρ ⊢ ¬ρ$$"]
+x6["$$ (ρ ⇒ σ), ¬σ, ρ ⊢ ρ ⇒ σ$$"]
+x7["$$ (ρ ⇒ σ), ¬σ, ρ ⊢ ¬σ$$"]
+
+x1 --- x2
+x2 --- x3
+x3 --- x4
+x3 --- x5
+x5 --- x6
+x5 --- x7
+```

@@ -4,39 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "86312866e708a883",
+        "id": "db373cc49c87973e",
         "type": "tabs",
         "children": [
           {
-            "id": "8c3bf6959e0358e9",
+            "id": "b176dccb84a3fe68",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practica/Practica0/Ejercicio3.md",
+                "file": "Practica/Practica3/Ejercicio5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ejercicio3"
+              "title": "Ejercicio5"
             }
           },
           {
-            "id": "e49bc75e147f844a",
+            "id": "de790b823b692734",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practica/Practica0/Ejercicio2.md",
+                "file": "Template/Mermaid.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ejercicio2"
+              "title": "Mermaid"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -59,7 +58,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+              "title": "Files"
             }
           },
           {
@@ -185,43 +184,44 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e49bc75e147f844a",
+  "active": "b176dccb84a3fe68",
   "lastOpenFiles": [
+    "Template/Mermaid.md",
+    "Practica/Practica3/Ejercicio5.md",
+    "Practica/Practica3/Ejercicio1.md",
+    "Template/Ejercicio.md",
+    "Practica/Practica5/Ejercicio1.md",
+    "Practica/Practica1/Ejercicio2.md",
+    "Practica/Practica3/Untitled.md",
+    "Welcome.md",
+    "Template",
+    "Practica/Practica3/Ejercicio13.md",
+    "Practica/Practica3/Ejercicio12.md",
+    "Practica/Practica3/Ejercicio11.md",
+    "Practica/Practica3/Ejercicio10.md",
+    "Practica/Practica3/Ejercicio9.md",
+    "Practica/Practica3/Ejercicio8.md",
+    "Practica/Practica3/Ejercicio7.md",
+    "Practica/Practica3/Ejercicio6.md",
+    "Practica/Practica3/Ejercicio4.md",
+    "Practica/Practica3/Ejercicio3.md",
+    "Practica/Practica3/Ejercicio2.md",
+    "Practica/Practica1/Ejercicio3.md",
+    "Practica/Practica1/Ejercicio1.md",
     "Practica/Practica0/Ejercicio3.md",
     "Practica/Practica0/Ejercicio2.md",
     "Practica/Practica0/Ejercicio4.md",
     "Practica/Practica0/Ejercicio5.md",
     "Practica/Practica0/Ejercicio1.md",
-    "PLP/Lógica de 1er orden.md",
-    "Practica/Practica0/Sin título.md",
-    "PLP/Interpretes.md",
-    "Practica/Practica1/Ejercicio1.md",
-    "PLP/Resolución lógica.md",
-    "PLP/Programación funcional.md",
-    "PLP/Correspondencia de Curry-Howard.md",
-    "PLP/Esquemas de recursión.md",
-    "Practica/Practica7/Ejercicio19.md",
-    "Practica/Practica7/Ejercicio14.md",
-    "PLP/Calculo lambda.md",
-    "PLP/Para que sirve paradigmas.md",
-    "PLP/Relación SLD con Prolog.md",
-    "PLP/Tipos de datos algebraicos.md",
-    "PLP/SLD.md",
-    "Practica/Practica2/Ejercicios de parcial final.md",
-    "Practica/Practica2/Ejercicio3.md",
-    "PLP/Razonamiento ecuacional.md",
-    "Practica/Practica2/Ejercicio1.md",
-    "Practica/Practica2/Ejercicio2.md",
-    "PLP/Prolog's cut.md",
     "Practica/Practica1/Untitled.canvas",
     "Practica/Practica0",
     "Practica/Practica8",
@@ -241,7 +241,6 @@
     "Pasted image 20250715195554.png",
     "Pasted image 20250715195521.png",
     "Pasted image 20250715195252.png",
-    "Pasted image 20250715195243.png",
-    "Untitled"
+    "Pasted image 20250715195243.png"
   ]
 }

@@ -66,4 +66,46 @@ flipRaro = flip flip
    Está currificada
 6. Su tipo es: `(float -> float) -> float -> float`
    Está currificada
-7. 
+7. Hagamos todo el desarrollo:
+```
+flipAll = map flip
+
+Tipos que sabemos
+map  :: (a -> b) -> [a] -> [b]
+flip :: (a -> b -> c) -> b -> a -> c
+
+map flip
+(a -> b) -> [a] -> [b] 
+(a -> b -> c) -> b -> a -> c
+Sabemos que:
+  (a -> b -> c) -> b -> a -> c = (a -> b -> c) -> (b -> (a -> c))
+Por lo tanto, al recibir (a -> b),
+  a = (a -> b -> c)
+  b = (b -> (a -> c))
+
+Entonces, la función quedaría:
+ [a -> b -> c] -> [b -> a -> c] 
+```
+8. Hagamos el desarrollo
+```
+flip flip
+
+Tipos que sabemos
+(a -> b -> c) -> b -> a -> c
+
+Sabemos además que:
+
+(a -> b -> c) -> b -> a -> c = (a -> b -> c) -> b -> (a -> c)
+
+Con esta información podemos resolverlo:
+
+flip recibe una  función, en este caso flip, y tenemos que asignarlo de 
+alguna forma que quede bien de alguna forma
+
+(a -> b -> c) con la función(a -> b -> c) -> b -> (a -> c)
+a = (a -> b -> c)
+b = b
+c = a -> c
+
+b -> (a -> b -> c) -> a -> c
+```

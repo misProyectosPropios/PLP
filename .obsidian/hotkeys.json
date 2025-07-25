@@ -61,5 +61,14 @@
       "key": "4"
     }
   ],
-  "workspace:goto-tab-4": []
+  "workspace:goto-tab-4": [],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "M"
+    }
+  ]
 }
