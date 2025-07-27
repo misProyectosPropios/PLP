@@ -1,4 +1,4 @@
-Queremos demostrar que ciertas expresiones son equivalentes.
+# Queremos demostrar que ciertas expresiones son equivalentes.
 ### ¿Para qué?
 + Justificar que un algoritmo es correcto
 	+ `∀xs :: [Int]. quickSort xs = insertionSort xs`
