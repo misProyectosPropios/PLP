@@ -8,105 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8c4aee02127028dd",
+            "id": "4c7de753e1858e9e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Practica/Practica2/Ejercicio4.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ejercicio4"
-            }
-          },
-          {
-            "id": "f8ba11c6e80dd403",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practica/Practica2/Ejercicio6.md",
+                "file": "Practica/Practica3/Ejercicio6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Ejercicio6"
             }
-          },
-          {
-            "id": "2e667bf1344f5521",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practica/Practica3/Ejercicio5.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ejercicio5"
-            }
-          },
-          {
-            "id": "b95390e0e2c03630",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practica/Practica2/Ejercicio3.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ejercicio3"
-            }
-          },
-          {
-            "id": "704d76ef5b2fb76a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PLP/Razonamiento ecuacional.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Razonamiento ecuacional"
-            }
-          },
-          {
-            "id": "83636bd9d5ae6b84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practica/Practica2/Ejercicio3.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ejercicio3"
-            }
-          },
-          {
-            "id": "ce78d614608eb740",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Practica/Practica2/Ejercicio2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ejercicio2"
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -264,8 +179,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2e667bf1344f5521",
+  "active": "4c7de753e1858e9e",
   "lastOpenFiles": [
+    "Practica/Practica3/Ejercicio5.md",
     "Practica/Practica2/Ejercicio6.md",
     "Practica/Practica2/Ejercicio4.md",
     "Practica/Practica2/Ejercicio3.md",
@@ -289,7 +205,6 @@
     "Símbolos para copiar lógica.md",
     "PLP/Deducción natural en lógica proposicional.md",
     "Practica/Practica3/EjerciciosFinales/Ejercicio25-7-2025.md",
-    "Practica/Practica3/Ejercicio5.md",
     "Template/Mermaid.md",
     "Practica/Practica3/EjerciciosFinales",
     "Template/Ejercicio.md",
