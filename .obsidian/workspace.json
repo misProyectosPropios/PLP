@@ -22,6 +22,34 @@
             }
           },
           {
+            "id": "f8ba11c6e80dd403",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practica/Practica2/Ejercicio6.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ejercicio6"
+            }
+          },
+          {
+            "id": "2e667bf1344f5521",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practica/Practica3/Ejercicio5.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ejercicio5"
+            }
+          },
+          {
             "id": "b95390e0e2c03630",
             "type": "leaf",
             "state": {
@@ -77,7 +105,8 @@
               "title": "Ejercicio2"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -235,14 +264,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8c4aee02127028dd",
+  "active": "2e667bf1344f5521",
   "lastOpenFiles": [
-    "Practica/Practica2/Ejercicio3.md",
+    "Practica/Practica2/Ejercicio6.md",
     "Practica/Practica2/Ejercicio4.md",
+    "Practica/Practica2/Ejercicio3.md",
     "Practica/Practica2/Ejercicio2.md",
     "PLP/Razonamiento ecuacional.md",
     "Practica/Practica2/Ejercicio7.md",
-    "Practica/Practica2/Ejercicio6.md",
     "Practica/Practica2/Ejercicio5.md",
     "Practica/Practica3/Ejercicio1.md",
     "Practica/Practica3/Ejercicio2.md",

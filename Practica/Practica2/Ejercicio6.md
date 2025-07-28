@@ -23,3 +23,4 @@ Indicar si las siguientes propiedades son verdaderas o falsas. Si son verdaderas
 
 ---
 ## Respuestas
+1. 

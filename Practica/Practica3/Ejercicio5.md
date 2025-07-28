@@ -19,29 +19,31 @@ Demostrar en deducción natural que las siguientes fórmulas son teoremas **sin 
 1. *Modus ponens* relativizado:
 
 ```mermaid
-flowchart TD
+flowchart BT
 
-    n1@{ label: "<span style=\"padding-left:\">$ (ρ ⇒ σ ⇒ τ )</span><span style=\"padding-left:\"><span style=\"padding-left:\">\\vdash</span></span><span style=\"padding-left:\">(ρ ⇒ σ) ⇒ ρ ⇒ τ$</span>" } --> n2["$$\vdash (ρ ⇒ σ ⇒ τ ) ⇒ (ρ ⇒ σ) ⇒ ρ ⇒ τ$$"]
+   x1["⊢(ρ⇒σ⇒τ) ⇒ (ρ⇒σ)⇒ρ⇒τ"]
+   x2["ρ⇒σ⇒τ ⊢ (ρ⇒σ) ⇒ ρ ⇒ τ"]
+   x3["ρ⇒σ⇒τ, ρ⇒σ ⊢ ρ ⇒ τ"]
+   x4["ρ⇒σ⇒τ, ρ⇒σ, ρ ⊢ τ"]
+   x5["ρ⇒σ⇒τ, ρ⇒σ, ρ ⊢ σ⇒τ"]
+   x6["ρ⇒σ⇒τ, ρ⇒σ, ρ ⊢ σ"]
+   x7["ρ⇒σ⇒τ, ρ⇒σ, ρ ⊢ ρ⇒σ"]
+   x8["ρ⇒σ⇒τ, ρ⇒σ, ρ ⊢ ρ"]
+   x9["ρ⇒σ⇒τ, ρ⇒σ, ρ ⊢ ρ⇒σ⇒τ"]
+   x10["ρ⇒σ⇒τ, ρ⇒σ, ρ ⊢ ρ"]
 
-    n3@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\">$ (ρ ⇒ σ ⇒ τ )</span><span style=\"padding-left:\">(ρ ⇒ σ)</span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">\\vdash</span></span><span style=\"padding-left:\"></span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\">ρ ⇒ τ$</span></span>" } --> n1
+x1 --- x2
+x2 --- x3
+x3 --- x4
 
-    n4@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">$ (ρ ⇒ σ ⇒ τ )</span><span style=\"padding-left:\">,(ρ ⇒ σ),</span></span><span style=\"padding-left:\"><span style=\"padding-left:\">ρ</span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">\\vdash</span></span></span></span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">⇒ τ$</span></span></span>" } --> n3
+x4 --- x5
+x4 --- x6
 
-    n5@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">$ (ρ ⇒ σ ⇒ τ )</span><span style=\"padding-left:\">,(ρ ⇒ σ),</span></span><span style=\"padding-left:\"><span style=\"padding-left:\">ρ</span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">\\vdash</span></span></span></span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">⇒</span></span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">ρ ⇒ σ</span></span></span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">=&gt; τ$</span></span></span></span>" } --> n4
+x5 --- x9
+x5 --- x10
 
-    n6@{ label: "<span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">$ (ρ ⇒ σ ⇒ τ )</span><span style=\"padding-left:\">,(ρ ⇒ σ),</span></span><span style=\"padding-left:\"><span style=\"padding-left:\">ρ</span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">\\vdash</span></span></span></span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">⇒</span></span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">ρ ⇒ σ</span></span></span></span></span><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\"><span style=\"padding-left:\">$</span></span></span></span></span>" } --> n4
-
-  
-
-    n1@{ shape: text}
-
-    n3@{ shape: text}
-
-    n4@{ shape: text}
-
-    n5@{ shape: text}
-
-    n6@{ shape: text}
+x6 --- x7
+x6 --- x8
 ```
 
 2. Reducción al absurdo:
