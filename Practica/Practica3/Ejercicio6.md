@@ -13,12 +13,21 @@ Demostrar en deducción natural que vale `⊢ σ` para cada una de las siguiente
 1.  Absurdo clásico: `(¬τ ⇒ ⊥) ⇒ τ
 ```mermaid
 flowchart BT
-x1["⊢"]
+x1["⊢(¬τ ⇒ ⊥) ⇒ τ"]
+x2["¬τ ⇒ ⊥ ⊢ τ"]
+x3["¬τ ⇒ ⊥, ¬τ ⊢ ⊥"]
+x4["¬τ ⇒ ⊥, ¬τ ⊢ ¬τ ⇒ ⊥"]
+x5["¬τ ⇒ ⊥, ¬τ ⊢ ¬τ"]
+
+x1 --- x2
+x2 --- x3
+x3 --- x4
+x3 --- x5
 ```
 2. Tercero excluido: `τ ∨ ¬τ`
 ```mermaid
 flowchart BT
-x1["⊢"]
+x1["⊢τ ∨ ¬τ"]
 ```
 3. Consecuencia milagrosa: `(¬τ ⇒ τ ) ⇒ τ`
 ```mermaid

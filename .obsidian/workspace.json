@@ -20,6 +20,48 @@
               "icon": "lucide-file",
               "title": "Ejercicio6"
             }
+          },
+          {
+            "id": "983f90e2f65a0580",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practica/Practica3/Ejercicio7.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ejercicio7"
+            }
+          },
+          {
+            "id": "a4732da11249b40d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PLP/Correspondencia de Curry-Howard.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Correspondencia de Curry-Howard"
+            }
+          },
+          {
+            "id": "5f414815304e1b3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Practica/Practica3/Ejercicio8.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ejercicio8"
+            }
           }
         ]
       }
@@ -78,7 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300.5
   },
   "right": {
     "id": "c86e16a559eb087d",
@@ -181,12 +223,22 @@
   },
   "active": "4c7de753e1858e9e",
   "lastOpenFiles": [
+    "Practica/Practica6/EjerciciosExtra.md",
+    "Practica/Practica7/Ejercicio14.md",
     "Practica/Practica3/Ejercicio5.md",
+    "Practica/Practica3/Ejercicio6.md",
+    "PLP/Razonamiento ecuacional.md",
+    "Practica/Practica3/Ejercicio7.md",
+    "PLP/Correspondencia de Curry-Howard.md",
+    "Pasted image 20250728195419.png",
+    "Pasted image 20250728195152.png",
+    "Pasted image 20250728195139.png",
+    "PLP/Interpretes.md",
+    "Practica/Practica3/Ejercicio8.md",
     "Practica/Practica2/Ejercicio6.md",
     "Practica/Practica2/Ejercicio4.md",
     "Practica/Practica2/Ejercicio3.md",
     "Practica/Practica2/Ejercicio2.md",
-    "PLP/Razonamiento ecuacional.md",
     "Practica/Practica2/Ejercicio7.md",
     "Practica/Practica2/Ejercicio5.md",
     "Practica/Practica3/Ejercicio1.md",
@@ -197,17 +249,10 @@
     "Practica/Practica2/Ejercicio9.md",
     "Practica/Practica2/Ejercicio8.md",
     "Practica/Practica2/Ejercicios de parcial final.md",
-    "Practica/Practica3/Ejercicio8.md",
-    "Practica/Practica3/Ejercicio7.md",
-    "Practica/Practica3/Ejercicio6.md",
     "Practica/Practica3/Ejercicio4.md",
     "Practica/Practica3/Ejercicio3.md",
     "Símbolos para copiar lógica.md",
-    "PLP/Deducción natural en lógica proposicional.md",
-    "Practica/Practica3/EjerciciosFinales/Ejercicio25-7-2025.md",
-    "Template/Mermaid.md",
     "Practica/Practica3/EjerciciosFinales",
-    "Template/Ejercicio.md",
     "Template",
     "Practica/Practica1/Untitled.canvas",
     "Practica/Practica0",
@@ -224,9 +269,6 @@
     "Pasted image 20250716232847.png",
     "Pasted image 20250716232836.png",
     "Pasted image 20250716111838.png",
-    "Pasted image 20250715195554.png",
-    "Pasted image 20250715195521.png",
-    "Pasted image 20250715195252.png",
-    "Pasted image 20250715195243.png"
+    "Pasted image 20250715195554.png"
   ]
 }
